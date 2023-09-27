@@ -1,0 +1,84 @@
+Table users {
+  	user_id TEXT pk
+  
+  	name_client TEXT
+  	email_client TEXT
+  	password_client TEXT
+  	date_of_birth_client TEXT
+  	gender_client TEXT
+  	phone_client TEXT
+  	avatar_client INTEGER
+  	facebook_client TEXT
+  	instagram_client TEXT
+
+  	role_client TEXT
+}
+
+Table hotels {
+  	hotel_id TEXT pk
+
+  	name_hotel TEXT
+  	description_hotel TEXT
+	picture_hotel INTEGER
+	country_id TEXT
+	address_hotel TEXT	
+	star_hotel INTEGER
+	//like_id TEXT
+}
+
+Table likes {
+	like_id TEXT
+	hotel_id TEXT
+	user_id TEXT
+}
+
+Table hotel_details { //trang Choose your stay
+  	hotel_details_id TEXT pk
+  
+	hotel_id TEXT
+	
+  	number_of_room_hotel_detail TEXT //có thể Double room, Single room, Tripper room
+
+	size_hotel_detail TEXT //độ rộng của phòng
+	description_hotel_detail TEXT //tự nhập(cho bao nhiêu người, còn gì khác)
+	price_hotel_detail INTEGER (dạng dollars) (tự cho)
+	status_hotel_detail INTEGER
+	picture_1_hotel_detail INTEGER
+  	picture_2_hotel_detail INTEGER
+  	picture_3_hotel_detail INTEGER
+}
+
+Table comments {
+  	comments_id TEXT pk
+  
+  	hotel_id TEXT
+	user_id TEXT
+
+  	content_comments TEXT
+}
+
+Table orders {
+  	order_id TEXT pk  
+	user_id TEXT
+  	//hotel_id TEXT
+	hotel_details_id TEXT
+	date_start_order DATE(ngày bắt đầu)//cài cứng ngày bắt đầu và ngày kết thúc
+	date_end_order DATE(ngày kết thúc)
+	image_payment INTEGER//ngân hàng hoặc momo
+  	status_order INTEGER//0 là doing, 1 là done, 2 là cancel
+}
+
+Table blogs {
+  	blog_id TEXT pk
+
+  	title_blog TEXT
+  	content_blog TEXT
+  	picture_blog INTEGER
+	country_id TEXT
+}
+
+Table countries {
+  	country_id TEXT pk
+
+	country_name TEXT
+}

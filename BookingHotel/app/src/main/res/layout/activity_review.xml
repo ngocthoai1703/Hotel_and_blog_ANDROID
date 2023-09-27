@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Review">
+
+    <ImageView
+        android:id="@+id/_85"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80dp"
+        android:background="@color/FF0B2B30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--TIÊU ĐỀ (POLICIES) TRÊN HÌNH BANNER BO TRÒN XANH (ImageRadius)-->
+    <TextView
+        android:id="@+id/_104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/encodesanssemicondensedmedium"
+        android:text="Read Review"
+        android:textColor="@color/FFF9F9F9"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/_85"
+        app:layout_constraintEnd_toEndOf="@+id/_85"
+        app:layout_constraintStart_toStartOf="@+id/_85"
+        app:layout_constraintTop_toTopOf="@+id/_85" />
+
+    <!--ICON BACK (QUAY LẠI) TRÊN NỀN HÌNH BANNER BO TRÒN XANH (ImageRadius)-->
+    <ImageView
+        android:id="@+id/_87"
+        android:layout_width="15dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/_104"
+        app:layout_constraintEnd_toStartOf="@+id/_104"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="@+id/_85"
+        app:srcCompat="@drawable/icon_back" />
+
+    <TextView
+        android:id="@+id/_49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/robotobold"
+        android:text="REVIEWS"
+        android:textColor="@color/FF1A6A77"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_85" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvc_review"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/_105"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_49"></androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/_105"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/radius_white_left_all"
+        android:drawablePadding="@dimen/_16dp"
+        android:hint="Enter comment"
+        android:paddingStart="@dimen/_24dp"
+        android:paddingEnd="5dp"
+        android:textColor="@color/FF444444"
+        android:textSize="@dimen/_text_16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/_196"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/radius_black_right_all"
+        android:text="Sent"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/_105" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

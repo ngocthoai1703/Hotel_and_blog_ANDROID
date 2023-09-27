@@ -1,0 +1,50 @@
+package com.example.bookinghotel.database;
+
+import java.util.Date;
+
+public class _0_hotel_details {
+    public String user_id; //1
+    public String hotel_id; //12
+    public String name_hotel; //13
+    public String country_id; //15
+    public String address_hotel; //16
+    public String hotel_details_id; //17
+    public String like_id; //19
+    public String number_of_room_hotel_detail; //20
+    public String size_hotel_detail; //21
+    public String description_hotel_detail; //22
+    public int price_hotel_detail; //23
+    public int status_hotel_detail; //24
+    public int picture_1_hotel_detail; //25
+    public int picture_2_hotel_detail; //26
+    public int picture_3_hotel_detail; //27
+    public String comments_id; //28
+    public String order_id; //30
+    public String blog_id; //34
+    public int picture_hotel; //39
+
+    public _0_hotel_details(String _user_id, String _hotel_id, String _country_id,
+                     String _hotel_details_id, String _like_id, String _comments_id,
+                     String _order_id, String _blog_id,
+                     String _number_of_room_hotel_detail, String _size_hotel_detail,
+                     String _description_hotel_detail,
+                     int _price_hotel_detail, int _status_hotel_detail, int _picture_1_hotel_detail,
+                     int _picture_2_hotel_detail, int _picture_3_hotel_detail) {
+        user_id = _user_id;
+        hotel_id = _hotel_id;
+        country_id = _country_id;
+        hotel_details_id = _hotel_details_id;
+        like_id = _like_id;
+        comments_id = _comments_id;
+        order_id = _order_id;
+        blog_id = _blog_id;
+        number_of_room_hotel_detail = _number_of_room_hotel_detail;
+        size_hotel_detail = _size_hotel_detail;
+        description_hotel_detail = _description_hotel_detail;
+        price_hotel_detail = _price_hotel_detail;
+        status_hotel_detail = _status_hotel_detail;
+        picture_1_hotel_detail = _picture_1_hotel_detail;
+        picture_2_hotel_detail = _picture_2_hotel_detail;
+        picture_3_hotel_detail = _picture_3_hotel_detail;
+    }
+}

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Policies">
+    <!--HÌNH BANNER BO TRÒN XANH -->
+
+
+    <ImageView
+        android:id="@+id/_85"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80dp"
+        android:background="@color/FF0B2B30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--TIÊU ĐỀ (POLICIES) TRÊN HÌNH BANNER BO TRÒN XANH (ImageRadius)-->
+    <TextView
+        android:id="@+id/_86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/encodesanssemicondensedmedium"
+        android:text="Policies"
+        android:textColor="@color/FFF9F9F9"
+        android:textSize="@dimen/_text_24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/_85"
+        app:layout_constraintEnd_toEndOf="@+id/_85"
+        app:layout_constraintStart_toStartOf="@+id/_85"
+        app:layout_constraintTop_toTopOf="@+id/_85" />
+
+    <!--ICON BACK (QUAY LẠI) TRÊN NỀN HÌNH BANNER BO TRÒN XANH (ImageRadius)-->
+    <ImageView
+        android:id="@+id/_87"
+        android:layout_width="@dimen/_15dp"
+        android:layout_height="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/_86"
+        app:layout_constraintEnd_toStartOf="@+id/_86"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="@+id/_85"
+        app:srcCompat="@drawable/icon_back" />
+
+    <!-- ĐOẠN VĂN MIÊU TẢ NGẮN VỀ KHÁCH SẠN -->
+
+    <!-- SECTION 1: MỤC GIỜ CHECK-IN & CHECK OUT -->
+
+    <!-- NỘI DUNG (1) TRONG SECTION 1-->
+
+    <!-- NỘI DUNG (2) TRONG SECTION 1-->
+
+    <!-- THANH NGANG (DIVIDE 1) - HẾT SECTION 1 -->
+
+    <!-- SECTION 2: MỤC INTERNET -->
+    <!-- NỘI DUNG TRONG SECTION 2-->
+
+    <!-- THANH NGANG (DIVIDE 2) - HẾT SECTION 2 -->
+
+    <!-- SECTION 3: MỤC PARKING -->
+
+    <!-- NỘI DUNG TRONG SECTION 3-->
+
+    <!-- THANH NGANG (DIVIDE 3) - HẾT SECTION 3 -->
+
+    <!-- SECTION 4: MỤC PETS -->
+
+    <!-- NỘI DUNG TRONG SECTION 4-->
+
+    <!-- THANH NGANG (DIVIDE 4) - HẾT SECTION 4 -->
+
+    <!-- SECTION 5: MỤC Accepted credit cards -->
+
+    <!-- NỘI DUNG TRONG SECTION 5-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/_88"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_28dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="These are general hotel policies for ABC Hotel. As they may wary per room type; please also check the room conditions"
+                android:textSize="@dimen/_16dp" />
+
+            <TextView
+                android:id="@+id/_89"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/robotobold"
+                android:text="Check-in/ Check-out times"
+                android:textColor="@color/FF000000"
+                android:textSize="@dimen/_16dp" />
+
+            <TextView
+                android:id="@+id/_90"
+                android:layout_width="@dimen/_270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Check-in from 14:00 until 00:00"
+                android:textSize="@dimen/_text_16sp" />
+
+            <TextView
+                android:id="@+id/_91"
+                android:layout_width="@dimen/_270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Check-out from 00:00 until 12:00"
+                android:textSize="@dimen/_text_16sp" />
+
+            <View
+                android:id="@+id/_92"
+                android:layout_width="@dimen/_350dp"
+                android:layout_height="@dimen/_1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/_93"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:fontFamily="@font/robotobold"
+                android:text="Internet"
+                android:textColor="@color/FF000000" />
+
+            <TextView
+                android:id="@+id/_94"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:text="Wifi is available in all areas and is free of charge" />
+
+            <View
+                android:id="@+id/_95"
+                android:layout_width="@dimen/_350dp"
+                android:layout_height="@dimen/_1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/_96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:fontFamily="@font/robotobold"
+                android:text="Parking"
+                android:textColor="@color/FF000000" />
+
+            <TextView
+                android:id="@+id/_97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:text="Parking is avalable" />
+
+            <View
+                android:id="@+id/_98"
+                android:layout_width="@dimen/_350dp"
+                android:layout_height="@dimen/_1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/_103"
+                android:layout_width="342dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Mastercard, Visa, JCB, American Express, Diners Club, Bankcard, UnionPay debit card"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/_101"
+                android:layout_width="@dimen/_350dp"
+                android:layout_height="@dimen/_1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/_99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/robotobold"
+                android:text="Pets"
+                android:textColor="@color/FF000000" />
+
+            <TextView
+                android:id="@+id/_102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:fontFamily="@font/robotobold"
+                android:text="Accepted credit cards"
+                android:textColor="@color/FF000000" />
+
+            <TextView
+                android:id="@+id/_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:text="Pets are not allowed" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

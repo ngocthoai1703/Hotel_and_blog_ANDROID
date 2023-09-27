@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlogDetail">
+
+    <ImageView
+        android:id="@+id/_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_30dp"
+        android:src="@drawable/icon_back_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="Blog"
+        android:textSize="@dimen/_text_24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_80dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5"
+            app:layout_constraintBottom_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_weight="1">
+
+                <!--                IMAGE BLOG-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200dp"
+                        android:src="@drawable/image_customer_test" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <!--                TEN CUA BLOG-->
+                <TextView
+                    android:id="@+id/_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:gravity="center"
+                    android:text="Mot's Hoi An"
+                    android:textSize="@dimen/_text_32sp" />
+            </LinearLayout>
+            <!--            CHIA LAYOUT-->
+            <LinearLayout
+                android:id="@+id/_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <!--                DIA CHI BAI BLOG-->
+                <TextView
+                    android:id="@+id/_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoregular"
+                    android:gravity="center"
+                    android:text="Da Nang"
+                    android:textSize="@dimen/_text_24sp" />
+            </LinearLayout>
+            <!--            CHIA LAYOUT-->
+            <LinearLayout
+                android:id="@+id/_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <!--                NOI DUNG CUA BLOG-->
+                <TextView
+                    android:id="@+id/_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotolight"
+                    android:gravity="left"
+                    android:text="Da Nang"
+                    android:textSize="@dimen/_text_16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/_14"
+        android:layout_width="@dimen/_150dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:gravity="center"
+        android:background="@drawable/radius_white_all"
+        android:text="Book Now"
+        app:cornerRadius="@dimen/_20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

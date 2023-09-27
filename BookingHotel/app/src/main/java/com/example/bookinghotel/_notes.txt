@@ -1,0 +1,336 @@
+_260: da xong
+
+//    private ItemClickListener itemClickListener;
+
+    //    public AdapterBlog(List<blog> blogModel, ItemClickListener itemClickListener) {
+//
+//        this.blogModel = blogModel;
+//        this.itemClickListener = itemClickListener;
+//    }
+
+//        intent recyclerview
+//        holder.itemView.setOnClickListener(view -> {
+//            itemClickListener.onItemClick(blogList.get(position));
+//        });
+
+//        intent recyclerview
+//    public interface ItemClickListener {
+//        void onItemClick(blog blog);
+//    }
+
+
+//    TextView body_des_blog;
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_blog_detail);
+//
+//        body_des_blog = findViewById(R.id.body_des_blog);
+//        body_des_blog.setText("This is a very famous drink shop in Hoi An. Tourists usually visit at least once when coming to Hoi An" +
+//                "This is a very famous drink shop in Hoi An. Tourists usually visit at least once when coming to Hoi An...\n" +
+//                "This is a very famous drink shop in Hoi An. Tourists usually visit at least once when coming to Hoi An...This is a very famous drink shop in Hoi An. Tourists usually visit at least once when coming to Hoi An...\\n\" +\n" +
+//                "                \"This is a very famous drink shop in Hoi An. Tourists usually visit at least once when coming to Hoi An...\\n\" +\n" +
+//                "                \"This is a very famous drink shop in Hoi An. Tourists usually visit at least once when coming to Hoi An...This is a very famous drink shop in Hoi An. Tourists usually visit at least once when coming to Hoi An...\\n\" +\n" +
+//                "                \"This is a very famous drink shop in Hoi An. Tourists usually visit at least once when coming to Hoi An...\\n\" +\n" +
+//                "                \"This is a very famous drink shop in Hoi An. Tourists usually visit at least once when coming to Hoi An...");
+
+
+blog blog;
+
+//        AdapterBlog adapter_list_blog = new AdapterBlog(getListRoom_Doing());
+//        recyclerView_doing.setAdapter(adapter_list_blog);
+
+androidx.appcompat.widget.AppCompatButton
+
+overridePendingTransition(R.anim._4_slide_center_to_top, R.anim._4_slide_bottom_to_center);
+
+
+
+editTextTextPersonName4
+"", "", "", "", "", "", "", "",
+
+
+public class SqlDateExample2 {
+    public static void main(String[] args) {
+        String str = "2017-09-11";
+        // converting string into sql date
+        Date date = Date.valueOf(str);
+        System.out.println(date);
+    }
+}
+
+HttpSession session = request.getSession();
+String nameBlog = "Blog IT Phu Tran - Chia sẽ kiến thức lập trình miễn Phí";
+session.setAttribute("nameBlog", nameBlog);
+
+HttpSession session = request.getSession();
+session.getAttribute("nameBlog");
+
+//hủy hết
+HttpSession session = request.getSession();
+session.invalidate();
+
+//        db.add_6_table(new _6_table("1", "", "", "", ""
+//                , "", "", "", "Le Ngoc Tuan"
+//                , "1", "1", Date.valueOf("2001-06-24")
+//                , "Nam", "0983212323", 1
+//                , "", "", ""));
+//        db.add_6_table(new _6_table("3", "", "", "", ""
+//                , "", "", "", "Le Ngoc Tuan"
+//                , "1", "1", Date.valueOf("2001-06-24")
+//                , "Nam", "0983212323", 1
+//                , "", "", ""));
+
+
+//    public _6_table getAccount(String _email_client, String _password_client) {
+//        _6_table contact = new _6_table();
+//        String selectQuery = "SELECT user_id, name_client, email_client,password_client, date_of_birth_client, gender_client, phone_client, avatar_client, facebook_client, instagram_client, role_client FROM users WHERE email_client=" + _email_client + " AND password_client=" + _password_client;
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        Cursor cursor = db.rawQuery(selectQuery, null);
+//        if (cursor.moveToFirst()) {
+//            contact.user_id = cursor.getString(0);
+//            contact.name_client = cursor.getString(1);
+//        }
+//        return contact;
+//    }
+
+
+//    public void addAll() {
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        ContentValues values = new ContentValues();
+//        values.put("user_id", "6");
+//        values.put("name_client", "Le Ngoc Toan");
+//        values.put("email_client", "1");
+//        values.put("password_client", "2");
+//        values.put("date_of_birth_client", "2001-08-24");
+//        values.put("gender_client", "Nam");
+//        values.put("phone_client", "0983212323");
+//        values.put("avatar_client", 1);
+//        values.put("facebook_client", "");
+//        values.put("instagram_client", "");
+//        values.put("role_client", "");
+//        db.insert("users", null, values);
+//
+//        values.put("user_id", "9");
+//        values.put("name_client", "Le Ngoc Tuan");
+//        values.put("email_client", "1");
+//        values.put("password_client", "1");
+//        values.put("date_of_birth_client", "2001-06-24");
+//        values.put("gender_client", "Nam");
+//        values.put("phone_client", "0983212323");
+//        values.put("avatar_client", 1);
+//        values.put("facebook_client", "");
+//        values.put("instagram_client", "");
+//        values.put("role_client", "");
+//        db.insert("users", null, values);
+//        db.close();
+//    }
+
+String.valueOf(account.date_of_birth_client)
+
+
+
+_0_users user = db.checkAccount(_81.getText().toString(), _82.getText().toString());
+                if(user.user_id != "" && user.name_client != "") {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Đăng nhập thành công", Toast.LENGTH_LONG);
+                    toast.setGravity(Gravity.TOP | Gravity.CENTER,0,0);
+                    toast.show();
+                    Intent i = new Intent(LogIn.this, MainActivity.class);
+                    startActivity(i);
+                    overridePendingTransition(R.anim._2_slide_center_to_left, R.anim._2_slide_right_to_center);
+                } else {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Sai tài khoản hoặc mật khẩu", Toast.LENGTH_LONG);
+                    toast.setGravity(Gravity.TOP | Gravity.LEFT, 0, 0);
+                    toast.show();
+                }
+
+Random generator = new Random();
+                    String random = String.valueOf(generator.nextInt());
+
+//DatabaseHandler db = new DatabaseHandler(this);
+//db.addContact(new Contact(Name, Phone));
+
+SharedPreferences sharedPreferences = getSharedPreferences("UserInfo", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("user_id",user.user_id);
+                    editor.putString("name_client",user.name_client);
+                    editor.commit();
+
+
+
+Intent i = new Intent(v.getContext(), DetailStudent.class);
+                i.putExtra("id", studentdetail.getID());
+
+                    Intent intent = getIntent();
+                            findViewsByIds();
+                            int i = intent.getIntExtra("id", 0);
+
+String intent = requireActivity().getIntent().getStringExtra("key_name");
+
+String intent = requireActivity().getIntent().getStringExtra("user_id");
+
+//    public _0_users getUser() {
+//        _0_users user = new _0_users();
+//        String selectQuery = "SELECT * FROM users WHERE user_id='1';";
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        Cursor cursor = db.rawQuery(selectQuery, null);
+//        if (cursor.moveToFirst()) {
+//            user.avatar_client = cursor.getInt(0);
+//        } else {
+//            user.avatar_client = 0;
+//        }
+//
+////        _0_users user = new _0_users();
+////        for(int i=0; i<users.size(); i++){
+////            if(users.get(i).user_id == "1") {
+////                user.user_id=users.get(i).user_id;
+////                user.avatar_client=users.get(i).avatar_client;
+////            }
+//////            System.out.println("Tên: "+listHS.get(i).ten+" Tuổi: "+listHS.get(i).tuoi);
+////        }
+//        return user;
+//    }
+
+
+
+_0_users user = new _0_users();
+        String selectQuery = "SELECT user_id,name_client,email_client,password_client" +
+                ",date_of_birth_client,gender_client,phone_client,avatar_client" +
+                ",facebook_client,instagram_client,role_client FROM users WHERE user_id='1'";
+        SQLiteDatabase db = new DatabaseHandler(getContext()).getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            user.user_id = cursor.getString(0);
+            user.name_client = cursor.getString(1);
+            user.email_client = cursor.getString(2);
+            user.password_client = cursor.getString(3);
+            user.date_of_birth_client = cursor.getString(4);
+            user.gender_client = cursor.getString(5);
+            user.phone_client = cursor.getString(6);
+            user.avatar_client = Integer.parseInt(cursor.getString(7));
+            user.facebook_client = cursor.getString(8);
+            user.instagram_client = cursor.getString(9);
+            user.role_client = cursor.getString(10);
+        }
+
+        //xử lý sql trên fragment
+       String selectQuery = "SELECT avatar_client FROM users WHERE role_client='login'";
+               SQLiteDatabase db = new DatabaseHandler(getContext()).getWritableDatabase();
+               Cursor cursor = db.rawQuery(selectQuery, null);
+               if (cursor.moveToFirst()) {
+                   image5.setImageResource(cursor.getInt(0));
+               }
+               if (cursor.moveToFirst()) {
+                           do {
+                               search_models.add(new _1_table("", cursor.getString(0), "", "", "", "", "", "", cursor.getInt(3), cursor.getString(1), cursor.getInt(12), cursor.getInt(13), "2N - 1D", cursor.getString(5)));
+                           } while (cursor.moveToNext());
+                       }
+
+                //xử lí database trên activity
+                SQLiteDatabase db = new DatabaseHandler(this).getWritableDatabase();
+                        _83.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                String _email_client = _81.getText().toString();
+                                String _password_client = _82.getText().toString();
+
+                                String selectQuery = "SELECT user_id FROM users WHERE email_client='" + _email_client + "' AND password_client='" + _password_client + "';";
+                                Cursor cursor = db.rawQuery(selectQuery, null);
+                                if (cursor.moveToFirst()) {
+                                    String user_id = cursor.getString(0);
+
+                                    ContentValues values = new ContentValues();
+                                    values.put("role_client", "login");
+                                    db.update("users", values, "user_id = ?",
+                                            new String[]{String.valueOf(user_id)});
+                                    Toast toast = Toast.makeText(getApplicationContext(), "Log in successfully!", Toast.LENGTH_LONG);
+                                    toast.setGravity(Gravity.CENTER, 0, 0);
+                                    toast.show();
+                                    //chuyển màn hình
+                                    Intent i = new Intent(LogIn.this, MainActivity.class);
+                                    startActivity(i);
+                                    overridePendingTransition(R.anim._2_slide_center_to_left, R.anim._2_slide_right_to_center);
+                                } else {
+                                    Toast toast = Toast.makeText(getApplicationContext(), "Incorrect account or password!", Toast.LENGTH_LONG);
+                                    toast.setGravity(Gravity.TOP | Gravity.LEFT, 0, 0);
+                                    toast.show();
+                                }
+                            }
+                        });
+
+                        //lấy biến kiểu int
+                        Intent intent = getIntent();
+                        int i = intent.getIntExtra("id", 0);
+                        String dataTransmited=intent.getStringExtra("dataToTransmitKey");
+
+                        i.putExtra("hotel_id", hotel.hotel_id);
+
+
+
+//        search_models.add(new _1_table("", "", "", "", "", "", "", "", R.drawable.hotelroom1, "GO2JOY - WHITE LION ROOM", 25, 1, "2N - 1D", "Da Nang", "hotel"));
+//        search_models.add(new _1_table("", "", "", "", "", "", "", "", R.drawable.hotelroom2, "GO2JOY - MILAN 1 ROOM", 30, 1, "2N - 1D", "Hoi An", "hotel"));
+//        search_models.add(new _1_table("", "", "", "", "", "", "", "", R.drawable.hotelroom3, "GO2JOY- TRẦN GIA ROOM TÂN PHÚ", 14, 1, "2N - 1D", "Da Nang", "hotel"));
+//        search_models.add(new _1_table("", "", "", "", "", "", "", "", R.drawable.hotelroom1, "GO2JOY - WHITE LION ROOM", 25, 1, "2N - 1D", "Da Nang", "hotel"));
+//        search_models.add(new _1_table("", "", "", "", "", "", "", "", R.drawable.hotelroom2, "GO2JOY - MILAN 1 ROOM", 30, 1, "2N - 1D", "Hoi An", "hotel"));
+//        search_models.add(new _1_table("", "", "", "", "", "", "", "", R.drawable.hotelroom3, "GO2JOY- TRẦN GIA ROOM TÂN PHÚ", 14, 1, "2N - 1D", "Da Nang", "hotel"));
+
+SELECT * FROM users WHERE avatar_client LIKE '%%' AND role_client LIKE '%lo%'
+
+
+<EditText
+        android:id="@+id/_130"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/robotoregular"
+
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:hint="Birthday"
+        android:focusableInTouchMode="false"
+
+        android:textSize="@dimen/_18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/_129"
+        app:layout_constraintTop_toBottomOf="@+id/_128" />
+
+Calendar calendar = Calendar.getInstance();
+                String Format = "dd/MM/yyyy";
+                SimpleDateFormat date_from = new SimpleDateFormat(Format, Locale.TAIWAN);
+
+date_from.format(calendar.getTime())
+
+                From dd/MM/yyyy to dd/MM/yyyy
+
+
+public static String reverseWordInMyString(String str)
+    {
+        String[] words = str.split(" ");
+        String reversedString = "";
+        for (int i = 0; i < words.length; i++)
+        {
+            String word = words[i];
+            String reverseWord = "";
+            for (int j = word.length()-1; j >= 0; j--)
+            {
+                reverseWord = reverseWord + word.charAt(j);
+            }
+            reversedString = reversedString + reverseWord + " ";
+        }
+        return reversedString;
+    }
+
+
+    overridePendingTransition(R.anim._2_slide_center_to_left, R.anim._2_slide_right_to_center);
+
+androidx.recyclerview.widget.RecyclerView
+
+@color/FFEAF4F9
+
+
+//finish();
+                    overridePendingTransition(0, 0);

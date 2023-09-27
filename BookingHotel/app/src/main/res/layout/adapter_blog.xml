@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapterLayout_list_blog"
+    android:elevation="@dimen/_8dp"
+    app:cardCornerRadius="@dimen/_5dp"
+    android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/_5dp"
+    android:layout_marginEnd="@dimen/_5dp"
+    android:layout_marginTop="@dimen/_10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_adapter_list_blog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/_140"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120dp"
+            android:src="@drawable/image_customer_test"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/_141"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotobold"
+            android:paddingStart="@dimen/_8dp"
+            android:paddingEnd="@dimen/_8dp"
+            android:text="Name's blog"
+            android:textSize="@dimen/_18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/_142"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:fontFamily="@font/robotoregular"
+            android:paddingStart="@dimen/_8dp"
+            android:paddingEnd="@dimen/_8dp"
+            android:text="Address"
+            android:textSize="@dimen/_text_16sp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

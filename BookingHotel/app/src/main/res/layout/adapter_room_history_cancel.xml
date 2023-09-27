@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapterLayout_roomHistory"
+    android:elevation="@dimen/_8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_15dp"
+    android:layout_marginBottom="@dimen/_15dp">
+
+    <!--LinearLayout tong-->
+    <LinearLayout
+        android:id="@+id/linearLayout_adapter_roomHistory_cancel"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--        LinearLayout cua img chia vs thong tin dat phong-->
+        <LinearLayout
+            android:id="@+id/linearLayout_adapter_roomHistory_sum_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--Image hotel-->
+            <ImageView
+                android:id="@+id/_154"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="@dimen/_250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_blog_1" />
+
+            <!--            LinearLayout cua thong tin hotel-->
+            <LinearLayout
+                android:id="@+id/linearLayout_adapter_InforoomHistory_cancel"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+                <!--            Ten hotel-->
+                <TextView
+                    android:id="@+id/_155"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Name's blog"
+                    android:textSize="@dimen/_20dp"
+                    android:textStyle="bold" />
+
+                <!--            Gia phong-->
+                <LinearLayout
+                    android:id="@+id/linearLayout_adapter_PriceroomHistory_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--                Text gia-->
+                    <TextView
+                        android:id="@+id/_156"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Price: $ "
+                        android:textColor="@color/FF1A6A77"
+                        android:textSize="@dimen/_18dp" />
+
+                    <!--                Gia phong-->
+                    <TextView
+                        android:id="@+id/_157"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10dp"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Ha Noi"
+                        android:textColor="@color/FF1A6A77"
+                        android:textSize="@dimen/_16dp" />
+                </LinearLayout>
+
+                <!--            LinearLayout so ngay dem-->
+                <!--So dem-->
+                <TextView
+                    android:id="@+id/_158"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="1N - 2D"
+                    android:textColor="@color/FF645C5C"
+                    android:textSize="@dimen/_18dp" />
+
+
+                <!--            LinearLayout cua so phong va loai phong-->
+                <TextView
+                    android:id="@+id/_159"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Double beds"
+                    android:textColor="@color/FF645C5C" />
+                <!--            LinearLayout dia chi-->
+                <LinearLayout
+                    android:id="@+id/linearLayout_adapter_AddressroomHistory_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--                Text address-->
+                    <TextView
+                        android:id="@+id/_160"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Add: "
+                        android:textSize="@dimen/_16dp" />
+                    <!--                Dia chi-->
+                    <TextView
+                        android:id="@+id/_161"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Ha Noi"
+                        android:textSize="@dimen/_16dp" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button3"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/radius_black_all"
+                    android:gravity="center"
+                    android:text="See bill"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
